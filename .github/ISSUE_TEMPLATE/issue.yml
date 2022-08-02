@@ -1,0 +1,108 @@
+name: Issue Report
+description: File a issue report
+title: "[DATE]: [FEATURE NAME]"
+labels: tracking issue, needs triage
+body:
+  - type: markdown
+    attributes:
+      value: |
+        
+        **Before opening a bug report, please search for the behaviour in the existing issues.**
+        
+  - type: dropdown
+    id: os
+    attributes:
+      label: Operating system
+      description: "Which operating system do you use? Please provide the version as well."
+      options:
+        - mac
+        - centos
+        - ubantu
+        - Somewhere else (please specify in the description!)
+    validations:
+      required: true
+      
+  - type: dropdown
+    id: Library
+    attributes:
+      label: Domain-Specific Vitis Library
+      description: "Please provide the domain of library used in your project."
+      options:
+        - BLAS Library
+        - Codec Library
+        - Database Library
+        - Data Analytics Library
+        - Data Compression Library
+        - DSP Library
+        - Genomics Library
+        - HPC Library
+        - Quantitative Finace Library
+        - Security Library
+        - Solver Library
+        - Utilities Library
+        - Vision Library
+    validations:
+      required: true
+      
+  - type: dropdown
+    id: Version
+    attributes:
+      label: Vitis Library Version
+      description: "Please provide the version of library used in your project."
+      options:
+        - 2022.1
+        - 2021.2
+        - 2021.1
+        - 2020.2
+        - 2020.4
+        - 2019.2
+    validations:
+      required: true
+      
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform
+      description: "Please provide the platform used in your project."
+      options:
+        - FPGA
+        - SoC
+        - ACAP
+    validations:
+      required: true
+      
+  - type: input
+    id: ai-engine
+    attributes:
+      label: AI Engine
+      description: If you use the AI Engine
+      placeholder: "Yes or No"
+    validations:
+      required: true
+      
+  - type: textarea
+    id: bug-description
+    attributes:
+      label: Bug description
+      description: What happened?
+    validations:
+      required: true
+      
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Which steps do we need to take to reproduce this error?
+      
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant log output
+      description: If applicable, provide relevant log output. No need for backticks here.
+      render: shell
+   
+  - type: markdown
+    attributes:
+      value: |
+        
+        **Thanks for completing our form!**
