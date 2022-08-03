@@ -15,7 +15,6 @@ body:
       label: Operating system
       description: "Which operating system do you use? Please provide the version as well."
       options:
-        - mac
         - centos
         - ubantu
         - Somewhere else (please specify in the description!)
