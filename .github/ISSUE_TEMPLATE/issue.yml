@@ -16,7 +16,7 @@ body:
       description: "Which operating system do you use? Please provide the version as well."
       options:
         - centos
-        - ubantu
+        - ubuntu
         - Somewhere else (please specify in the description!)
     validations:
       required: true
@@ -70,12 +70,14 @@ body:
     validations:
       required: true
       
-  - type: input ### dropdown
+  - type: dropdown
     id: ai-engine
     attributes:
       label: AI Engine
       description: If you use the AI Engine
-      placeholder: "Yes or No"
+      options:
+        - y
+        - n
     validations:
       required: true
       
