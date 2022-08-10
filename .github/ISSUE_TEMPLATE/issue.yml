@@ -10,6 +10,20 @@ body:
         **Before creating an issue, please search for the behaviour in the existing issues.**
         
         **Please choose the labels and assignees.**
+  - type: textarea
+    id: bug-description
+    attributes:
+      label: Description
+      description: What happened?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Which steps do we need to take to reproduce this error?
+    validations:
+      required: true
   - type: dropdown
     id: Library
     attributes:
@@ -215,20 +229,7 @@ body:
         - Samsung_AIC_SmartSSD
         - Samsung_U.2_SmartSSD
  
-  - type: textarea
-    id: bug-description
-    attributes:
-      label: Description
-      description: What happened?
-    validations:
-      required: true
-  - type: textarea
-    id: steps
-    attributes:
-      label: Steps to reproduce
-      description: Which steps do we need to take to reproduce this error?
-    validations:
-      required: true
+  
 
   - type: markdown
     attributes:
