@@ -160,23 +160,66 @@ body:
       label: OS Found
       description: "Which operating system do you use? Please provide the version as well."
       options:
-        - centos
-        - ubuntu
-        - Somewhere else (please specify in the description!)
+        - N_O_N_E
+        - All
+        - CentOS6 64-bit
+        - CentOS7.1 64-bit
+        - RHEL4 WS 32bit
+        - RHEL4 WS 64bit
+        - RHEL5 WS 32bit
+        - RHEL5 WS 64bit
+        - RHEL6 WS 32bit
+        - RHEL6 WS 64bit
+        - RHEL7.1 WS 64bit
+        - SLED11 32bit
+        - SLED11 64bit
+        - Ubuntu 14.04 LTS
+        - Win7 32bit
+        - Win7 32bit CHN
+        - Win7 32bit JPN
+        - Win7 64bit
+        - Win7 64bit CHN
+        - Win7 64bit JPN
+        - Win8.1 32-bit
+        - Win8.1 64-bit
+        - Win10 64-bit
+        - Other (please specify in the description!)
   - type: dropdown
     id: platform
     attributes:
       label: Platform
       description: "Please provide the platform used in your project."
       options:
-        - FPGA
-        - SoC
-        - ACAP
+        - N_O_N_E
+        - 250S
+        - 250S+_Storage_Aggregator
+        - Alveo U200
+        - Alveo U25
+        - Alveo U250
+        - Alveo U280
+        - Alveo U30
+        - Alveo U50
+        - Alveo U55C
+        - Alveo U55N
+        - Alveo U880
+        - Alveo U350
+        - Alveo U65
+        - Alveo VCK5000
+        - Alveo X3522
+        - Alveo_U50_NVMe-oF
+        - Fidus
+        - KD240
+        - KR260
+        - KV240
+        - KV260
+        - Molex 250SOC
+        - Samsung_AIC_SmartSSD
+        - Samsung_U.2_SmartSSD
  
   - type: textarea
     id: bug-description
     attributes:
-      label: Bug description
+      label: Description
       description: What happened?
     validations:
       required: true
@@ -187,12 +230,7 @@ body:
       description: Which steps do we need to take to reproduce this error?
     validations:
       required: true
-  - type: textarea
-    id: logs
-    attributes:
-      label: Relevant log output
-      description: If applicable, provide relevant log output. No need for backticks here.
-      render: shell
+
   - type: markdown
     attributes:
       value: |
