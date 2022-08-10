@@ -9,44 +9,10 @@ body:
       value: |
         
         **Before opening a bug report, please search for the behaviour in the existing issues.**
-  
-  - type: dropdown
-    id: device
-    attributes:
-      label: Device Family
-      description: "Please provide the platform used in your project."
-      options:
-        - FPGA
-        - SoC
-        - ACAP
-    validations:
-      required: true
-  
-  
-  - type: dropdown
-    id: os
-    attributes:
-      label: OS Found
-      description: "Which operating system do you use? Please provide the version as well."
-      options:
-        - centos
-        - ubuntu
-        - Somewhere else (please specify in the description!)
-        
-  - type: dropdown
-    id: platform
-    attributes:
-      label: Platform
-      description: "Please provide the platform used in your project."
-      options:
-        - FPGA
-        - SoC
-        - ACAP
-      
   - type: dropdown
     id: Library
     attributes:
-      label: Domain-Specific Vitis Library
+      label: Vitis Libraries Application
       description: "Please provide the domain of library used in your project."
       options:
         - BLAS Library
@@ -79,9 +45,7 @@ body:
         - 2019.2
     validations:
       required: true
-      
-
-      
+         
   - type: dropdown
     id: ai-engine
     attributes:
@@ -91,7 +55,46 @@ body:
         - y
         - n
     validations:
+      required: true  
+
+
+
+- type: dropdown
+    id: device
+    attributes:
+      label: Device Family
+      description: "Please provide the platform used in your project."
+      options:
+        - FPGA
+        - SoC
+        - ACAP
+    validations:
       required: true
+  
+  
+  - type: dropdown
+    id: os
+    attributes:
+      label: OS Found
+      description: "Which operating system do you use? Please provide the version as well."
+      options:
+        - centos
+        - ubuntu
+        - Somewhere else (please specify in the description!)
+     validations:
+       required: true
+        
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform
+      description: "Please provide the platform used in your project."
+      options:
+        - FPGA
+        - SoC
+        - ACAP
+      
+
       
   - type: textarea
     id: bug-description
