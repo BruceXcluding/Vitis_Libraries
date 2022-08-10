@@ -8,6 +8,7 @@ body:
     attributes:
       value: |
         **Before opening a bug report, please search for the behaviour in the existing issues.**
+        **Please choose the labels and assignees.**
   - type: dropdown
     id: Library
     attributes:
