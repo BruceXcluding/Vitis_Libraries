@@ -1,7 +1,7 @@
 name: Create Issue
 title: "[DATE]: [FEATURE NAME]"
 description: File a issue report
-assignees: 
+assignees: String
 labels: tracking issue, needs triage
 body:
   - type: markdown
