@@ -59,7 +59,7 @@ body:
       label: Device Family
       description: "Please provide the platform used in your project."
       options:
-        - No
+        - N_O_N_E
         - 7_series
         - All
         - All_CPLD
