@@ -5,7 +5,7 @@ assignees: String
 labels: tracking issue, needs triage
 body:
  - type: markdown
-    attributes:
+   attributes:
       value: |
         
         **Before opening a bug report, please search for the behaviour in the existing issues.**
