@@ -1,6 +1,5 @@
 name: Create Issue
 description: File a issue report
-title: "[DATE]: [FEATURE NAME]"
 labels: tracking issue, needs triage
 body:
   - type: markdown
