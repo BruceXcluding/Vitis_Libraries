@@ -10,7 +10,7 @@ body:
         **Before opening a bug report, please search for the behaviour in the existing issues.**
   
   - type: dropdown
-    id: platform
+    id: device
     attributes:
       label: Device Family
       description: "Please provide the platform used in your project."
