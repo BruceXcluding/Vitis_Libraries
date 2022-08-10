@@ -1,4 +1,4 @@
-name: Issue Report
+name: Create Issue
 description: File a issue report
 title: "[DATE]: [FEATURE NAME]"
 labels: tracking issue, needs triage
@@ -8,18 +8,39 @@ body:
       value: |
         
         **Before opening a bug report, please search for the behaviour in the existing issues.**
-        
+  
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Device Family
+      description: "Please provide the platform used in your project."
+      options:
+        - FPGA
+        - SoC
+        - ACAP
+    validations:
+      required: true
+  
+  
   - type: dropdown
     id: os
     attributes:
-      label: Operating system
+      label: OS Found
       description: "Which operating system do you use? Please provide the version as well."
       options:
         - centos
         - ubuntu
         - Somewhere else (please specify in the description!)
-    validations:
-      required: true
+        
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform
+      description: "Please provide the platform used in your project."
+      options:
+        - FPGA
+        - SoC
+        - ACAP
       
   - type: dropdown
     id: Library
@@ -58,17 +79,7 @@ body:
     validations:
       required: true
       
-  - type: dropdown
-    id: platform
-    attributes:
-      label: Platform
-      description: "Please provide the platform used in your project."
-      options:
-        - FPGA
-        - SoC
-        - ACAP
-    validations:
-      required: true
+
       
   - type: dropdown
     id: ai-engine
@@ -94,6 +105,8 @@ body:
     attributes:
       label: Steps to reproduce
       description: Which steps do we need to take to reproduce this error?
+    validations:
+      required: true
       
   - type: textarea
     id: logs
