@@ -73,7 +73,7 @@ body:
       required: true
   
   
-  - type: dropdown
+   - type: dropdown
     id: os
     attributes:
       label: OS Found
