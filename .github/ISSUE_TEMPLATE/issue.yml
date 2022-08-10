@@ -11,7 +11,7 @@ body:
   - type: dropdown
     id: Library
     attributes:
-      label: Domain-Specific Vitis Library
+      label: Vitis Library Application
       description: "Please provide the domain of library used in your project."
       options:
         - BLAS Library
@@ -59,9 +59,99 @@ body:
       label: Device Family
       description: "Please provide the platform used in your project."
       options:
-        - FPGA
-        - SoC
-        - ACAP
+        - None
+        - 7_series
+        - All
+        - All_CPLD
+        - All_FPGA
+        - All_PROM
+        - Artix7
+        - Artix9
+        - CoolRunner
+        - CoolRunner2
+        - CoolRunner2s
+        - FPGACORE
+        - Holistic8
+        - Kintex UltraScale
+        - Kintex UltraScale Plus
+        - Kintex7
+        - Kintex7l
+        - Kria SOM
+        - NA
+        - Qspartan6
+        - Qspartan6l
+        - Ronaldo
+        - Shannon
+        - Spartan2
+        - Spartan3
+        - Spartan3A
+        - Spartan3ADSP
+        - Spartan3AN
+        - Spartan3E
+        - Spartan6
+        - Spartan6 LX
+        - Spartan6 LXT
+        - Spartan6l
+        - Spartan7
+        - System ACE CF
+        - UltraScale
+        - UltraScale Plus
+        - Versal
+        - Versal AI Core
+        - Versal AI Edge
+        - Versal AI RF
+        - Versal HBM
+        - Versal Premium
+        - Versal Prime
+        - Versal PS VIP
+        - Virtex
+        - Virtex UltraScale
+        - Virtex UltraScale Plus
+        - Virtex UltraScale XT
+        - Virtex2P
+        - Virtex4
+        - Virtex4 FX
+        - Virtex4 LX
+        - Virtex4 SX
+        - Virtex5
+        - Virtex5 FXT
+        - Virtex5 LXT
+        - Virtex5 SXT
+        - Virtex6
+        - Virtex6 CXT
+        - Virtex6 HXT
+        - Virtex6 LXT
+        - Virtex6 SXT
+        - Virtex6l
+        - Virtex7
+        - Virtex7 HT
+        - Virtex7l
+        - XA9500XL
+        - XAArtix7
+        - XASpartan3
+        - XASpartan3A
+        - XASpartan6
+        - XAZynq7000
+        - XC9500XL/XV
+        - XCF128XL
+        - XQArtix7
+        - XQKintex UltraScale
+        - XQKintex7
+        - XQRVirtex2
+        - XQRVirtex5 FXT
+        - XQRVirtexE
+        - XQVirtex
+        - XQVirtex-5 FXT
+        - XQVirtex-5 LX
+        - XQVirtex-5 SXT
+        - XQVirtex4
+        - XQVirtex5
+        - XQVirtex7
+        - XQZynq7000
+        - Zynq
+        - Zynq UltraScale Plus
+   
+     
     validations:
       required: true
   - type: dropdown
