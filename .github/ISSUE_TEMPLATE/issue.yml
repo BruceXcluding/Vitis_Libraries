@@ -1,6 +1,6 @@
 name: Create Issue
 description: File a issue report
-title: "[DATE]: [FEATURE NAME]"
+title: "Summary"
 assignees: String
 labels: tracking issue, needs triage
 body:
