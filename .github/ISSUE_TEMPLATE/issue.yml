@@ -9,6 +9,7 @@ body:
       value: |
         
         **Before opening a bug report, please search for the behaviour in the existing issues.**
+  
   - type: dropdown
     id: Library
     attributes:
@@ -55,7 +56,7 @@ body:
         - y
         - n
     validations:
-      required: true  
+      required: true 
 
 
 
