@@ -6,16 +6,16 @@ labels: tracking issue, needs triage
 body:
  - type: markdown
    attributes:
-      value: |
+    value: |
         
         **Before opening a bug report, please search for the behaviour in the existing issues.**
   
  - type: dropdown
-    id: Library
-    attributes:
-      label: Vitis Libraries Application
-      description: "Please provide the domain of library used in your project."
-      options:
+   id: Library
+   attributes:
+    label: Vitis Libraries Application
+    description: "Please provide the domain of library used in your project."
+    options:
         - BLAS Library
         - Codec Library
         - Database Library
@@ -29,30 +29,30 @@ body:
         - Solver Library
         - Utilities Library
         - Vision Library
-    validations:
-      required: true
+   validations:
+     required: true
       
  - type: dropdown
-    id: Version
-    attributes:
-      label: Vitis Library Version
-      description: "Please provide the version of library used in your project."
-      options:
+   id: Version
+   attributes:
+   label: Vitis Library Version
+   description: "Please provide the version of library used in your project."
+   options:
         - 2022.1
         - 2021.2
         - 2021.1
         - 2020.2
         - 2020.1
         - 2019.2
-    validations:
-      required: true
+   validations:
+     required: true
          
  - type: dropdown
-    id: ai-engine
-    attributes:
-      label: AI Engine
-      description: If you use the AI Engine
-      options:
+   id: ai-engine
+   attributes:
+    label: AI Engine
+    description: If you use the AI Engine
+    options:
         - y
         - n
     validations:
@@ -61,11 +61,11 @@ body:
 
 
  - type: dropdown
-    id: device
-    attributes:
-      label: Device Family
-      description: "Please provide the platform used in your project."
-      options:
+   id: device
+   attributes:
+    label: Device Family
+    description: "Please provide the platform used in your project."
+    options:
         - FPGA
         - SoC
         - ACAP
@@ -76,9 +76,9 @@ body:
   - type: dropdown
     id: os
     attributes:
-      label: OS Found
-      description: "Which operating system do you use? Please provide the version as well."
-      options:
+     label: OS Found
+     description: "Which operating system do you use? Please provide the version as well."
+     options:
         - centos
         - ubuntu
         - Somewhere else (please specify in the description!)
