@@ -60,7 +60,7 @@ body:
 
 
 
-- type: dropdown
+  - type: dropdown
     id: device
     attributes:
       label: Device Family
