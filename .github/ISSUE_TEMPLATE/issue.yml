@@ -7,12 +7,13 @@ body:
   - type: markdown
     attributes:
       value: |
-        **Before opening a bug report, please search for the behaviour in the existing issues.**
+        **Before creating an issue, please search for the behaviour in the existing issues.**
+        
         **Please choose the labels and assignees.**
   - type: dropdown
     id: Library
     attributes:
-      label: Vitis Library Application
+      label: Application
       description: "Please provide the domain of library used in your project."
       options:
         - BLAS Library
